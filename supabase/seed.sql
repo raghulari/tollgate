@@ -1,0 +1,2 @@
+-- Tollgate Development Seed Data
+-- Seed data will be populated in Phase 1 alongside initial SQL migrations.

@@ -1,0 +1,30 @@
+{
+  "name": "@tollgate/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/worker.ts",
+    "build": "tsc",
+    "start": "node dist/worker.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src/ tests/",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tollgate/config": "workspace:*",
+    "@tollgate/database": "workspace:*",
+    "@tollgate/logger": "workspace:*",
+    "@tollgate/observability": "workspace:*",
+    "@tollgate/schemas": "workspace:*",
+    "@tollgate/shared": "workspace:*",
+    "bullmq": "^5.41.0",
+    "ioredis": "^5.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

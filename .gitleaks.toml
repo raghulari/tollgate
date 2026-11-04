@@ -1,0 +1,10 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Global allowlist for Tollgate"
+paths = [
+  '''^\.env\.example$''',
+  '''^tests/.*''',
+  '''^docs/.*'''
+]
